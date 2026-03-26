@@ -2,7 +2,7 @@
 #define QUEUE_FACTORY_HPP
 
 #include "Queue.hpp"
-#include "ArrayQueue.hpp"
+#include "arrayQueue.hpp"
 #include "LinkedQueue.hpp"
 
 using namespace std;
