@@ -6,10 +6,6 @@
 #include "LinkedQueue.hpp"
 
 using namespace std;
-
-// -------------------------------------------------------
-// QueueFactory
-// -------------------------------------------------------
 template <typename T>
 class QueueFactory {
     public:

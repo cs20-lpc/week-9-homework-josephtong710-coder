@@ -88,7 +88,6 @@ void RunBankSimulation() {
     cout << " Queue type  : LinkedQueue (singly linked list)"  << endl;
     cout << " Max capacity: unlimited"                         << endl;
     cout << " Iterations  : " << ITERATIONS                    << endl;
-    cout << "============================================"     << endl;
 
     Queue<int>* queue = QueueFactory<int>::GetQueue();
 
@@ -130,25 +129,8 @@ void RunBankSimulation() {
 
     delete queue;
 }
-
-// -------------------------------------------------------
-// main
-// -------------------------------------------------------
 int main() {
     srand(static_cast<unsigned int>(time(nullptr)));
-
-    cout << endl;
-    cout << "==========================================" << endl;
-    cout << "   Queue Factory -- Two-Simulation Driver" << endl;
-    cout << "==========================================" << endl;
-    cout << endl;
-    cout << "Design rationale:" << endl;
-    cout << "  Sim 1 uses ArrayQueue  -- max size is fixed (10),"  << endl;
-    cout << "  so a bounded circular buffer is the right choice."  << endl;
-    cout << "  Sim 2 uses LinkedQueue -- no cap; line grows as"    << endl;
-    cout << "  needed, so an unbounded linked list fits best."     << endl;
-    cout << endl;
-
     RunTicketCounterSimulation();
     RunBankSimulation();
 
